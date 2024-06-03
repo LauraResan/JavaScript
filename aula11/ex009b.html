@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AAAAAA</title>
+</head>
+<body>
+    <h1>Verificação de status de moradia?</h1>
+    Vivendo em: <input type="text" name="txtv" id="txtv">
+    Nasceu em: <input type="text" name="txtn" id="txtn">
+    <input type="button" value="Verificar" onclick='verificar()'>
+    <div id="res">
+        
+    </div>
+
+    <script>
+
+        
+
+        function verificar() {
+
+        var viveem = window.document.querySelector('input#txtv').value;
+        var nasceuem = window.document.querySelector('input#txtn').value;
+        
+            if (viveem !== nasceuem ) {
+                res.innerHTML += `<p>Você é um <strong>estrangeiro</strong> na onde você mora</p>`
+            }else{
+                res.innerHTML += `<p>Você é um <strong>nativo</strong> na onde você mora</p>` 
+            }
+
+        }
+
+    </script>
+
+
+</body>
+</html>
