@@ -1,6 +1,14 @@
+
 body{
     background-color: rgb(127, 129, 255);
     font: normal 15pt Arial;
+}
+
+img{
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-left: 25%;
 }
 
 header{
